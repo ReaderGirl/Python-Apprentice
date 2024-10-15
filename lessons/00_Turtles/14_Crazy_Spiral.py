@@ -6,7 +6,34 @@ in 14_FLaming_Ninja_Star.py, but use what you've learned about loops
 """
 
 ... # Copy code to make a turtle and set up the window
+import random
+import turtle
 
+
+# Returns a random color!
+def getRandomColor():
+    return "#%06X" % (random.randint(0, 0xFFFFFF))
+
+
+colors = ["violet", "green", "violet", "green", "violet"]
+
+
+def getNextColor(i):
+    return colors[i % len(colors)]
+
+turtle.setup (width=600, height=600) 
+window = turtle.Screen()
+
+baseSize = 200  # the size of the black part of the star
+flameSize = 130  # the length of the flaming arms
+
+t = turtle.Turtle() 
+
+t.shape("turtle") 
+
+t.width(2) 
+
+t.speed(0) 
 t = ... # Create a turtle named t
 
 

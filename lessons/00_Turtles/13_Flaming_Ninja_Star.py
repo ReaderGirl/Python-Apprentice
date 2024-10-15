@@ -4,16 +4,16 @@ This program already works; run it to see what it does.
 Then change it to make it draw a different pattern. 
 """
 
-import random
+import greenlet
 import turtle
 
 
-# Returns a random color!
+# Returns green color!
 def getRandomColor():
-    return "#%06X" % (random.randint(0, 0xFFFFFF))
+    return "#%06X" % (greenlet.randint(0, 0xFFFFFF))
 
 
-colors = ["red", "blue", "green", "yellow", "orange"]
+colors = ["green", "green", "green", "green", "green"]
 
 
 def getNextColor(i):

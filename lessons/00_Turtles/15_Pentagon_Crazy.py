@@ -17,7 +17,7 @@ window = turtle.Screen()
 window.bgcolor("black")
 window.setup(width=600, height=600, startx=0, starty=0)
 
-colors = ("red", "blue", "green", "yellow", "orange")
+colors = ("maroon", "white", "cyan", "white", "cyan")
 
 myTurtle = turtle.Turtle()
 myTurtle.shape("turtle")
